@@ -10,7 +10,6 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:javaassistant.helloWorld"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -18,8 +17,20 @@
       {
         "command": "javaassistant.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "javaassistant.wordview",
+        "title": "Word View"
       }
-    ]
+    ],
+    "views": {
+      "explorer": [
+				{
+					"id": "testView",
+					"name": "Test View"
+				}
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
